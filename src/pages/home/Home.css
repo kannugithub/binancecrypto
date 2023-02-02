@@ -1,0 +1,48 @@
+.container {
+    background-color: rgb(250, 250, 250);
+    padding: 50px 0;
+}
+.main-home {
+    display: flex;
+    margin: 0 auto;
+    width: 1240px;
+    padding: 50px 0;
+}
+.main-home h1 {
+    font-family: BinancePlex,Arial,sans-serif!important;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+}
+.btn {
+    margin: 12px 0px 0px;
+    appearance: none;
+    user-select: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    padding: 6px 24px;
+    line-height: 20px;
+    word-break: keep-all;
+    color: rgb(24, 26, 32);
+    border-radius: 4px;
+    min-height: 24px;
+    border: none;
+    background-image: none;
+    background-color: rgb(252, 213, 53);
+    height: 48px;
+    font-size: 16px;
+    min-width: fit-content;
+}
