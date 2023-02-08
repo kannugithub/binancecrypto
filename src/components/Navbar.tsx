@@ -1,163 +1,99 @@
-// import binancelogo from "./assets/binancelogo.png";
-import binancelogo from "../assets/binancelogo.png";
-import { Link } from "react-router-dom";
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import "./Navbar.css";
+import React from "react";
+import { Theme } from "../Theme/Theme";
+import {
+  Box,
+  AppBar,
+  Toolbar,
+  styled,
+  Typography,
+  List,
+  ListItem,
+  Link,
+  Divider,
+  useMediaQuery,
+  useTheme,
+  Tabs,
+  Tab,
+} from "@mui/material";
+import {
+  Apps,
+  ArrowDropDown,
+  QrCodeScanner,
+  Language,
+  DarkMode,
+} from "@mui/icons-material";
+import { DrawerComp } from "./Drawer/DrawerComp";
 
-const pages = [
-  "Buy Crypto",
-  "Markets",
-  "Trade",
-  "Derivatives",
-  "Earn",
-  "Finance",
-  "NFT",
-  "Institutional",
-  "Feed",
-];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const StyledToolbar = styled(Toolbar)(({ theme }) => ({
+  display: "flex",
+  // justifyContent: "space-between",
+  padding: "0px",
+  backgroundColor: "#ffffff",
+  alignItems: "center",
+  fontSize: "14px",
+  color: "#000000",
+}));
 
-function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
-    null
-  );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
+const Navbar = () => {
+  const theme = useTheme();
+  console.log(theme);
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  const isMatch = useMediaQuery(theme.breakpoints.down("lg"));
+  console.log(isMatch);
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  const Pages = [
+    "Buy Crypto",
+    "Markets",
+    "Trade",
+    "Derivatives",
+    "Earn",
+    "Finance",
+    "NFT",
+    "Institutional",
+    "Feed",
+  ];
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <img src={binancelogo} className="logo" />
-
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+    <>
+      <AppBar
+        position="sticky"
+        sx={{ display: "-webkit-inline-box", backgroundColor: "#ffffff" }}
+      >
+        <Typography sx={{ paddingRight: "20px", marginTop: "15px" }}>
+          <img
+            src="/src/assets/binancelogo.png"
+            alt=""
+            width={180}
+            height={36}
+            style={{ marginLeft: "30px" }}
+          />
+        </Typography>
+        {isMatch ? (
+          <>
+            <DrawerComp />
+          </>
+        ) : (
+          <>
+            <StyledToolbar
               sx={{
-                display: { xs: "block", md: "none" },
+                // xs: "none",
+                // sm: "block",
+                // width: "70%",
+                paddingLeft: "30px !important",
+                paddingRight: "0px !important",
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+              <Apps />
+              <ArrowDropDown />
+              {Pages.map((page, index) => (
+                <Tab key={index} label={page} />
               ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "black", display: "block" }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
+            </StyledToolbar>
+          </>
+        )}
+      </AppBar>
+    </>
   );
-}
+};
+
 export default Navbar;
