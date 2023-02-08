@@ -1,0 +1,9 @@
+.image-box {
+    display: flex;
+}
+li::marker {
+    color: #ffffff;
+}
+img.list-img {
+    width: 100%;
+}

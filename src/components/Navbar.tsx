@@ -21,8 +21,12 @@ import {
   QrCodeScanner,
   Language,
   DarkMode,
+  AccountCircle,
+  Notifications,
+  SystemUpdate,
 } from "@mui/icons-material";
 import { DrawerComp } from "./Drawer/DrawerComp";
+import { fontSize } from "@mui/system";
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -79,16 +83,87 @@ const Navbar = () => {
                 // xs: "none",
                 // sm: "block",
                 // width: "70%",
-                paddingLeft: "30px !important",
+                paddingLeft: "0px !important",
                 paddingRight: "0px !important",
               }}
             >
               <Apps />
               <ArrowDropDown />
-              {Pages.map((page, index) => (
-                <Tab key={index} label={page} />
-              ))}
+              <Box>
+                {Pages.map((page, index) => (
+                  <Tab
+                    key={index}
+                    label={page}
+                    sx={{
+                      maxWidth: "300px",
+                      minWidth: "60px",
+                      fontSize: "12px",
+                      textTransform: "capitalize",
+                    }}
+                  />
+                ))}
+              </Box>
             </StyledToolbar>
+            <Box
+              sx={{
+                marginLeft: "auto",
+                alignItems: "center",
+                paddingRight: "20px",
+              }}
+            >
+              <Tabs value={"#"} aria-label="icon label tabs example">
+                <Tab
+                  icon={<ArrowDropDown />}
+                  iconPosition="end"
+                  label="Wallet"
+                  sx={{
+                    maxWidth: "300px",
+                    minWidth: "60px",
+                    fontSize: "12px",
+                    textTransform: "capitalize",
+                    padding: "12px 4px",
+                  }}
+                />
+                <Tab
+                  icon={<ArrowDropDown />}
+                  iconPosition="end"
+                  label="Orders"
+                  sx={{
+                    maxWidth: "300px",
+                    minWidth: "60px",
+                    fontSize: "12px",
+                    textTransform: "capitalize",
+                    padding: "12px 4px",
+                  }}
+                />
+                <List sx={{ display: "flex" }}>
+                  <ListItem sx={{ padding: "8px 10px" }}>
+                    {" "}
+                    <AccountCircle />
+                  </ListItem>
+                  <ListItem sx={{ padding: "8px 10px" }}>
+                    {" "}
+                    <Notifications />
+                  </ListItem>
+                  <ListItem sx={{ padding: "8px 10px" }}>
+                    {" "}
+                    <SystemUpdate />
+                  </ListItem>
+                  <ListItem sx={{ padding: "8px 10px" }}>
+                    {" "}
+                    <Language sx={{ fontSize: "20px" }} />
+                  </ListItem>
+                  <ListItem sx={{ padding: "8px 10px" }}>
+                    {" "}
+                    <span style={{ fontSize: "14px" }}> USD </span>
+                  </ListItem>
+                  <ListItem sx={{ padding: "8px 10px" }}>
+                    {" "}
+                    <DarkMode sx={{ fontSize: "20px" }} />
+                  </ListItem>
+                </List>
+              </Tabs>
+            </Box>
           </>
         )}
       </AppBar>

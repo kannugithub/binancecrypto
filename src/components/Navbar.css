@@ -1,3 +1,13 @@
-img.logo {
-    height: 36px;
+.css-cjctlb-MuiButtonBase-root-MuiTab-root {
+
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+    max-width: 300px;
+    min-width: 60px;
+
+
+}
+li.MuiListItem-root.MuiListItem-gutters.MuiListItem-padding.css-1sg8b1a-MuiListItem-root {
+    padding: 8px 10px !important;
 }

@@ -1,0 +1,58 @@
+.text-section p {
+    line-height: 3.2em;
+}
+
+.qrCode-text h4 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 3.2em;
+}
+.mobile-section2 {
+    display: flex;
+    column-gap: 30px;
+}
+.mobile-section2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.img-mobile-sec img {
+    width: 600px;
+}
+.qrCode-sec {
+    display: flex;
+    align-items: center;
+}
+.qrCode-text {
+    padding-left: 15px;
+}
+.qrCode img {
+    width: 100px;
+}
+.brand-logo {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 10px;
+}
+.brand-items {
+    border: 1px solid #fff;
+    width: 100px;
+    padding: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.brand-items:hover {
+   
+    border: 1px solid #00000021;
+    background-color: #0000000e;
+    border-radius: 5px;
+}
+.brand-items p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.link-option  {
+    text-align: center;
+    margin: 0 auto;
+}

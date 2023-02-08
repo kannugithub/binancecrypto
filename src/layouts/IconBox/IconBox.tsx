@@ -23,7 +23,7 @@ const IconBox = () => {
     {
       img: <QuestionAnswer />,
       title: "Community",
-      disc: "Binance is global. Join the discussion in our worldwide communities.",
+      disc: "Binance is global. Join the discussion in our worldwide...",
     },
     {
       img: <PeopleAlt />,
@@ -32,8 +32,8 @@ const IconBox = () => {
     },
   ];
   return (
-    <div className="icon-box" style={{ marginTop: "30px" }}>
-      <div className="items">
+    <div className="icon-box">
+      <div className="iconbox-items">
         {rows.map((item) => (
           <ul>
             <li>{item.img}</li>

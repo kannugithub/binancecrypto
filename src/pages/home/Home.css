@@ -1,48 +1,60 @@
-.container {
-    background-color: rgb(250, 250, 250);
-    padding: 50px 0;
+.home-main {
+    padding: 100px 0;
+    background: #fafafa;
 }
-.main-home {
+.img-box {
+    padding-top: 50px;
+}
+.list-item li {
+    list-style: none;
+    line-height: 3em;
+    font-size: 14px;
+    color: rgb(112, 122, 138);
     display: flex;
-    margin: 0 auto;
-    width: 1240px;
+    gap: 12px;
+    cursor: pointer;
+    align-items: center;
+}
+.list-item li:hover{
+    color: #f3ba2f;
+    
+}
+.list-sec {
+    padding-top: 50px;
+}
+
+.crypto-table {
     padding: 50px 0;
 }
-.main-home h1 {
-    font-family: BinancePlex,Arial,sans-serif!important;
-    font-size: 3em;
+.text-sec-crypto {
+    display: flex;
+}
+.text-sec2 {
+    margin-left: auto;
+}
+
+.trade-sec {
+    padding: 50px 0;
+}
+.contact-sec {
+    padding: 50px 0;
+}
+.footer-sec {
+    background: #fafafa;
+    padding: 50px 0;
+    text-align: center;
+}
+/* .icon-list li {
+    color: rgb(112, 122, 138);
+    font-size: 14px;
+    line-height: 3.2em;
+    padding: 0;
+}
+
+ul {
     padding: 0;
     margin: 0;
 }
-.btn {
-    margin: 12px 0px 0px;
-    appearance: none;
-    user-select: none;
-    cursor: pointer;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: inline-flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    box-sizing: border-box;
-    font-family: inherit;
-    font-weight: 500;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    padding: 6px 24px;
-    line-height: 20px;
-    word-break: keep-all;
-    color: rgb(24, 26, 32);
-    border-radius: 4px;
-    min-height: 24px;
-    border: none;
-    background-image: none;
-    background-color: rgb(252, 213, 53);
-    height: 48px;
-    font-size: 16px;
-    min-width: fit-content;
-}
+img.mobile-sc {
+    width: 600px;
+} */

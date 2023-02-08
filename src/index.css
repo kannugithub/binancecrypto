@@ -68,3 +68,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+
+h1 {
+  font-size: 50px;
+  line-height: 1.4em;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.btn {
+  text-transform: capitalize !important;
+  margin-top: 25px !important;
+  padding: 10px 35px !important;
+}
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 28px;
+    line-height: 1.2em;
+  }
+  p{
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  
+}
