@@ -29,3 +29,12 @@ li.disc-sm {
     line-height: 1.4em;
     color: rgb(71, 77, 87);
 }
+@media only screen and (max-width: 600px) { 
+    .iconbox-items ul {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px !important;
+        margin: 0;
+        padding: 0;
+    }
+}

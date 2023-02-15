@@ -1,0 +1,42 @@
+.main-sec {
+    padding: 50px 0;
+}
+.trade-crypto-sec {
+    padding: 50px 0;
+}
+.icon-sec {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    min-width: fit-content;
+}
+.icon-items {
+        width: calc(33.333% - 33px);
+        height: 100px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-right: 33px;
+        font-size: 18px;
+        line-height: 28px;
+        background: #fafafa;
+        border: 2px solid #e7e7e7;
+        border-radius: 5px;
+}
+
+a {
+        text-decoration: none;
+}
+
+.buySell-sec {
+    display: flex;
+    padding: 50px 0;
+}
+
+.buysell-text {
+    padding-right: 100px;
+}
+.buysell-img img {
+    width: 360px;
+}

@@ -1,0 +1,48 @@
+.earn-main-sec {
+    margin-top: 70px;
+    background: #fafafa;
+}
+.earn-banner-sec {
+    padding: 50px 0;
+}
+.banner-count-sec {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.earn-banner-sec p {
+    font-size: 16px;
+    line-height: 2em;
+}
+.launchpad-sec {
+    margin: 50px 0;
+}
+img.launch-img {
+    width: 400px;
+    border-radius: 5px;
+}
+.launc-sec2 {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+}
+.launch-inner-txt {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+}
+.token-txt-items {
+    margin-top: 10px;
+}
+.launch-txt h3 {
+    margin-bottom: 15px;
+}
+span.lbl {
+    font-size: 14px;
+    color: rgb(71, 77, 87);
+    line-height: 20px;
+    box-sizing: border-box;
+}
+span.num-lbl {
+    font-size: 14px;
+}

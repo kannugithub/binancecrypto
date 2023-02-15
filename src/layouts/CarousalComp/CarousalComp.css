@@ -1,0 +1,34 @@
+.card-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    column-gap: 30px;
+    padding: 50px 0;
+  }
+  
+  .card-item {
+    width: 20%;
+    height: 300px;
+    padding: 20px 20px;
+    background-color: rgb(35, 40, 45);
+    color: #ffffff;
+    text-align: left !important;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgb(24, 26, 32)
+  }
+  .card-item:hover {
+    background-color:  rgb(24, 26, 32);
+   border: 1px solid #f6ca25
+  }
+  
+  /* .card-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */
+  

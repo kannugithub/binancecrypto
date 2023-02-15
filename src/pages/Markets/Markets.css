@@ -1,0 +1,44 @@
+.main-sec {
+    padding: 100px 0;
+}
+.icon-sec-p2p {
+    display: flex;
+    column-gap: 30px;
+    text-align: center;
+    background: #fafafa;
+    padding: 50px 30px;
+    margin-top: 50px
+}
+.p2p-item {
+    border: 1px solid #e7e7e7;
+    padding: 30px;
+    border-radius: 5px;
+    width: 33%;
+}
+.adv-p2p {
+    display: flex;
+    padding: 50px 0;
+}
+.adv-txt-sec {
+    width: 70%;
+    padding-right: 100px;
+}
+img.p2p-mobile {
+    width: 320px;
+    height: 600px;
+}
+.icon-sec-p2p2 {
+    display: flex;
+    padding-top: 20px;
+    position: relative;
+    align-items: center;
+}
+.icon-img {
+    min-width: 14%;
+}
+.icon-txt {
+    position: relative;
+    /* align-items: center; */
+    vertical-align: middle;
+    padding-top: 15px !important;
+}

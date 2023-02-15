@@ -13,6 +13,7 @@ export const Theme = createTheme({
     },
     neutral: {
       main: "#f6f6f6a1",
+      light: "#ffffff",
     },
   },
   breakpoints: {

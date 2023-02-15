@@ -1,0 +1,63 @@
+.dash-main {
+    /* width: 85%; */
+    /* margin-left: auto; */
+    background: #fafafa;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+main.MuiBox-root.css-1v5u2yv {
+    padding: 0;
+}
+td {
+    font-size: 12px;
+    padding-right: 30px;
+}
+.user-img {
+    flex: 1;
+}
+.user-txt {
+    flex: 22;
+}
+
+.user-claim {
+    flex: 1;
+}
+
+.wallet-swc-main{
+    /* width: 85%;
+    margin-left: auto; */
+    padding: 30px;
+    display: flex;
+}
+.fund-sec {
+    flex: 6;
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 10px;
+}
+.exp-sec {
+    flex: 4;
+    padding-left: 80px;
+}
+.wall-icon-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.wall-icon-sec:hover {
+   background-color: #ffffff;
+   border-radius: 5px;
+}
+.btn2 {
+    width: 110px;
+    padding: 8px 0 5px 0;
+}
+.est-bln-sec {
+    /* width: 85%;
+    margin-left: auto; */
+    padding: 30px;
+    display: flex;
+}

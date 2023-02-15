@@ -73,12 +73,28 @@ h1 {
   font-size: 50px;
   line-height: 1.4em;
   font-weight: 500;
-  padding-bottom: 15px;
+  /* padding-bottom: 15px; */
+}
+h2 {
+  font-size: 30px;
+  line-height: 1.2em;
+}
+p{
+  font-size: 14px;
+  line-height: 1.6em;
+  /* padding: 15px 0; */
 }
 .btn {
   text-transform: capitalize !important;
   margin-top: 25px !important;
   padding: 10px 35px !important;
+  width: 170px;
+}
+
+.btn-nav {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: #000 !important;
 }
 
 @media screen and (max-width: 600px) {

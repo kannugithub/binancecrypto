@@ -1,0 +1,39 @@
+.main-trade {
+    margin-top: 69px;
+    background-color: rgb(11, 14, 17);
+    padding: 50px 0;
+    color: #ffffff;
+}
+.trade-banner-sec {
+    display: flex;
+    column-gap: 30px;
+    padding-bottom: 50px;
+}
+.banner-text {
+    width: 50%;
+    position: relative;
+}
+.banner-img {
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+img.trade-img {
+    width: 500px;
+    box-shadow: 1px 1px 30px #f6ca25;
+    border-radius: 10px;
+}
+.strategy-sec{
+    background-color: rgb(24, 26, 32);
+    padding: 50px 0;
+}
+.feature-sec {
+    display: flex;
+    column-gap: 30px;
+    padding-top: 50px;
+}
+.faq-sec {
+    background: #181A20;
+    padding: 50px;
+    margin-top: 50px;
+}

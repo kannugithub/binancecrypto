@@ -21,6 +21,7 @@ import ImageBox from "../../layouts/ImageBox/ImageBox";
 import MobileScreenSection from "../../layouts/MobileScreenSection/MobileScreenSection";
 import { Theme } from "../../Theme/Theme";
 import "../../index.css";
+import BuyCryptoDropdown from "../../components/Navbar/BuyCryptoDropdown/BuyCryptoDropdown";
 
 // const ContainerImg = styled(Container)({
 //   display: "grid",

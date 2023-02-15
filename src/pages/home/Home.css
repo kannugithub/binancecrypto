@@ -44,6 +44,36 @@
     padding: 50px 0;
     text-align: center;
 }
+@media only screen and (max-width: 600px) {
+    .list-item li {        
+        line-height: 2em;
+        font-size: 12px;        
+    }
+    .home-main {
+        padding: 50px 0;
+        background: #fafafa;
+    }
+    .mobile-section2 {
+        display: block !important;
+        /* column-gap: 30px; */
+    }
+    .img-mobile-sec img {
+        width: 300px !important;
+    }
+    .qrCode-sec {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .brand-items {       
+        padding: 10px !important;
+        margin-bottom: 5px !important;        
+    }
+    .mobile-section2 {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
 /* .icon-list li {
     color: rgb(112, 122, 138);
     font-size: 14px;

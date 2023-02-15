@@ -1,3 +1,7 @@
 .foo1 {
     margin-bottom: 15px;
 }
+@media only screen and (max-width: 600px) {
+    .MuiGrid-root.MuiGrid-grid-xs-2.css-1waxbu0-MuiGrid-root {
+        min-width: 33%;
+    }}

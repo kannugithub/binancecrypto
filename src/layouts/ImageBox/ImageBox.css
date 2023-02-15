@@ -7,3 +7,19 @@ li::marker {
 img.list-img {
     width: 100%;
 }
+
+.img-box-main {
+    display: flex;    
+    padding: 10px;
+    cursor: pointer;
+}
+.img-item {
+    padding: 5px !important;
+}
+@media only screen and (max-width: 600px) {
+    .img-box-main {
+        display: block;    
+        padding: 10px;
+      
+  }
+}

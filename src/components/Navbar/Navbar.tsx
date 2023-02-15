@@ -1,5 +1,6 @@
 import React from "react";
-import { Theme } from "../Theme/Theme";
+import { Theme } from "../../Theme/Theme";
+import BuyCryptoDropdown from "../../components/Navbar/BuyCryptoDropdown/BuyCryptoDropdown";
 import {
   Box,
   AppBar,
@@ -24,9 +25,12 @@ import {
   AccountCircle,
   Notifications,
   SystemUpdate,
+  KeyboardArrowDown,
 } from "@mui/icons-material";
-import { DrawerComp } from "./Drawer/DrawerComp";
+import { DrawerComp } from "../Drawer/DrawerComp";
+import {} from "react-router-dom";
 import { fontSize } from "@mui/system";
+// import {} from 'react-router-dom'
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   display: "flex",
@@ -63,14 +67,17 @@ const Navbar = () => {
         position="sticky"
         sx={{ display: "-webkit-inline-box", backgroundColor: "#ffffff" }}
       >
-        <Typography sx={{ paddingRight: "20px", marginTop: "15px" }}>
-          <img
-            src="/src/assets/binancelogo.png"
-            alt=""
-            width={180}
-            height={36}
-            style={{ marginLeft: "30px" }}
-          />
+        <Typography sx={{ paddingRight: "20px" }}>
+          <Link href="/">
+            {" "}
+            <img
+              src="/src/assets/binancelogo.png"
+              alt=""
+              width={180}
+              height={36}
+              style={{ marginLeft: "30px" }}
+            />
+          </Link>
         </Typography>
         {isMatch ? (
           <>
@@ -87,8 +94,6 @@ const Navbar = () => {
                 paddingRight: "0px !important",
               }}
             >
-              <Apps />
-              <ArrowDropDown />
               <Box>
                 {Pages.map((page, index) => (
                   <Tab
@@ -170,5 +175,7 @@ const Navbar = () => {
     </>
   );
 };
+
+// creating dropdown menu ?
 
 export default Navbar;

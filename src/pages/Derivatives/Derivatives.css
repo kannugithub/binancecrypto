@@ -1,0 +1,46 @@
+.deri-main-sec {
+    margin-top: 68px;
+    background-color: #0B0E11;
+}
+.deriva-sec2 {
+    padding: 80px 0;
+    color: #ffffff;
+}
+.deri-icon-sec{
+    background-color: #181a20;
+    padding: 50px 0;
+    color: #ffffff;
+    text-align: center;
+}
+.icon-items-sec {
+    display: flex;
+    column-gap: 30px;
+}
+.deri-img-sec-main {
+    display: flex;
+    text-align: left;
+    padding-top: 80px;
+    column-gap: 30px;
+}
+img.vip-upgrade {
+    width: 600px;
+}
+.deri-btn-sec-main {
+    display: flex;
+    column-gap: 15px;
+}
+.partners-sec {
+    padding: 80px 0;
+    color: #ffffff;
+    background-color: #181a1f;
+}
+.partners-icon-sec {
+    display: flex;
+}
+img.part-img {
+    width: 211px;
+    height: 76px;
+}
+.partners-icons-items {
+    text-align: center;
+}
