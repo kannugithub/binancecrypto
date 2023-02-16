@@ -3,3 +3,13 @@
     color: #ffffff !important;
     text-transform: capitalize !important;
 }
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.css-1au19cf-MuiButtonBase-root-MuiButton-root {
+    text-transform: capitalize;
+    color: #ffffff !important;
+}
+svg.MuiSvgIcon-root.MuiSvgIcon-fontSizeMedium.css-i4bv87-MuiSvgIcon-root {
+    color: #000;
+}
+@media only screen and (max-width: 600px) {
+    
+ }

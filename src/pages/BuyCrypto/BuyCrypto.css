@@ -40,3 +40,42 @@ a {
 .buysell-img img {
     width: 360px;
 }
+
+@media only screen and (max-width: 600px) {
+    .icon-sec {
+        display: block;       
+        min-width: 200px;
+    }
+    .icon-items {
+        width: 200px;
+        margin: 15px;
+        padding: 30px;
+        margin-right: 0;
+        text-align: center;
+        font-size: 15px;
+    }
+    .buySell-sec {
+        display: inline-block;
+        padding: 30px 0;
+    }
+    .buysell-text {
+        padding: 15px;
+    }
+    .buysell-img {
+        text-align: center;
+    }
+    .buysell-img img {
+        width: 250px;
+        text-align: center;
+    }
+    .conv-text-sec {
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .conv-text-sec2 {
+        display: block;
+        
+    }
+ }

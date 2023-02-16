@@ -46,3 +46,30 @@ span.lbl {
 span.num-lbl {
     font-size: 14px;
 }
+
+.pro-sec {
+    display: flex;
+    margin-top: 50px;
+}
+.btn {
+    width: 180px;
+}
+img.pro-img {
+    width: 400px;
+}
+.pro-txt-sec {
+    width: 50%;
+}
+.pro-img-sec {
+    width: 50%;
+}
+img.pro-img {
+    width: 350px;
+    margin-left: auto;
+    float: right;
+}
+h2 {
+    font-size: 36px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}

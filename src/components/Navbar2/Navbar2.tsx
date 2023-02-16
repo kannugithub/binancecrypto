@@ -12,10 +12,12 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { AccountCircle } from "@mui/icons-material";
 // import { Link } from "@mui/material";
 import logowhite from "../../assets/logowhite.png";
 import "./Navbar2.css";
 import { Link } from "react-router-dom";
+import { textTransform } from "@mui/system";
 
 const pages = [
   "BuyCrypto",
@@ -24,9 +26,7 @@ const pages = [
   "Derivatives",
   "Earn",
   "Finance",
-  "NFT",
   "Institutional",
-  "Feed",
 ];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
@@ -114,9 +114,11 @@ function ResponsiveAppBar() {
                 <MenuItem
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ color: "neutral.light" }}
+                  sx={{
+                    color: "neutral.light",
+                  }}
                 >
-                  <Typography textAlign="center" sx={{ color: "secondary" }}>
+                  <Typography textAlign="center" sx={{ color: "#ffffff" }}>
                     <Link
                       className="link-nav"
                       style={{
@@ -131,7 +133,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
           <Typography
             variant="h5"
             noWrap
@@ -148,7 +150,12 @@ function ResponsiveAppBar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            <img
+              src={logowhite}
+              alt=""
+              className="logo"
+              style={{ width: "160px" }}
+            />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -167,7 +174,7 @@ function ResponsiveAppBar() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <AccountCircle />
               </IconButton>
             </Tooltip>
             <Menu
@@ -188,7 +195,10 @@ function ResponsiveAppBar() {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Link style={{ textDecoration: "none" }} to={`/${setting}`}>
+                    {setting}
+                  </Link>
+                  {/* <Typography textAlign="center">{setting}</Typography> */}
                 </MenuItem>
               ))}
             </Menu>

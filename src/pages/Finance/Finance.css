@@ -1,0 +1,79 @@
+.finance-main {
+    margin-top: 70px;
+}
+.finance-banner {
+    display: flex;
+    column-gap: 50px;
+    padding: 50px 0;
+    align-items: center;
+}
+img.finance-img {
+    width: 576px;
+    height: 493px;
+}
+.finance-icon-sec2 {
+    display: flex;
+    column-gap: 100px;
+    text-align: center;
+}
+.finc-icon-items p {
+    margin-top: 15px;
+}
+.cashB-sec {
+    display: flex;
+    column-gap: 50px;
+    padding: 100px 0;
+    align-items: center;
+}
+img.cashB-img {
+    width: 547px;
+    height: 298px;
+
+}
+.lowest-sec {
+    display: flex;
+    column-gap: 50px;
+    padding: 100px 0;
+    align-items: center;
+}
+img.lowest-img {
+    width: 547px;
+    height: 298px;
+
+}
+.spend-sec {
+    display: flex;
+    column-gap: 50px;
+    background: #fafafa;
+    border-radius: 5px;
+    align-items: center;
+    padding-bottom: 50px;
+}
+img.spend-img {
+    width: 454px;
+    height: 439px;
+    margin-top: -100px;
+}
+.spend-txt-sec {
+    padding: 80px;
+}
+.cards-work-sec {
+    padding: 50px 0;
+}
+.cards-work {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-top: 50px;
+}
+.cards-items {
+    background: #fafafa;
+    min-width: 250px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 14px #00000014;
+}
+.cards-items p {
+    font-size: 18px;
+    margin-top: 15px;
+}

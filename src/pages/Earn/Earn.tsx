@@ -1,7 +1,9 @@
 import React from "react";
 import "./Earn.css";
 import hooked from "../../assets/hooked.jpg";
+import logos from "../../assets/logos.jpg";
 import { Button, Container } from "@mui/material";
+import IconBox from "../../layouts/IconBox/IconBox";
 const Earn = () => {
   return (
     <>
@@ -76,21 +78,30 @@ const Earn = () => {
                 </div>
               </div>
             </div>
-            <div className="pro-sec">
-              <div className="pro-txt-sec">
-                <h2>Launch a project on Binance now!</h2>
-                <p>
-                  Binance Launchpad and Launchpool are platforms that help and
-                  advise project teams on how to best issue and launch their
-                  token. We provide a full service offering starting from
-                  advisory services
-                </p>
-                <Button variant="contained" className="btn">
-                  Apply to Launch
-                </Button>
-              </div>
-              <div className="pro-img-sec"></div>
+          </div>
+          <div className="pro-sec">
+            <div className="pro-txt-sec">
+              <h2>
+                Launch a project on
+                <br /> Binance now!
+              </h2>
+              <p>
+                Binance Launchpad and Launchpool are platforms that help and
+                advise project teams on how to best issue and launch their
+                token. We provide a full service offering starting from advisory
+                services
+              </p>
+              <Button variant="contained" className="btn">
+                Apply to Launch
+              </Button>
             </div>
+            <div className="pro-img-sec">
+              <img src={logos} alt="" className="pro-img" />
+            </div>
+          </div>
+          <div className="choose-sec">
+            <h2>Why choose us?</h2>
+            <IconBox />
           </div>
         </Container>
       </div>

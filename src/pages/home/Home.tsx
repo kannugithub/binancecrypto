@@ -153,7 +153,7 @@ const Home = () => {
         </Container>
       </Responsive> */}
       <div className="home-main">
-        <Container fixed>
+        <Container>
           <div className="banner-txt">
             <h1>Fund your account</h1>
             <p>
@@ -167,7 +167,7 @@ const Home = () => {
         </Container>
       </div>
       <div className="img-box">
-        <Container fixed>
+        <Container>
           <ImageBox />
         </Container>
       </div>

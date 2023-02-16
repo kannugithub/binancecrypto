@@ -16,13 +16,14 @@ import Dashboard from "./components/Dashboard/Dashboard";
 import Trade from "./pages/Trade/Trade";
 import Derivatives from "./pages/Derivatives/Derivatives";
 import Earn from "./pages/Earn/Earn";
+import Finance from "./pages/Finance/Finance";
+import Institutional from "./pages/Institutional/Institutional";
 
 function App() {
-  function Dashboard() {
+  function Navigation() {
     return (
       <div>
         <Navbar2 />
-
         <Outlet />
       </div>
     );
@@ -32,13 +33,15 @@ function App() {
       {/* <Navbar /> */}
       <Router>
         <Routes>
-          <Route path="/" element={<Dashboard />}>
+          <Route path="/" element={<Navigation />}>
             <Route index element={<Home />} />
             <Route path="/buycrypto" element={<BuyCrypto />} />
             <Route path="/markets" element={<Markets />} />
             <Route path="/trade" element={<Trade />} />
             <Route path="/derivatives" element={<Derivatives />} />
             <Route path="/earn" element={<Earn />} />
+            <Route path="/finance" element={<Finance />} />
+            <Route path="/institutional" element={<Institutional />} />
             <Route path="/dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
